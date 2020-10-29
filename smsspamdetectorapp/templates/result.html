@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!--Enter Name -->
+<div class="enter-message">
+  <h3>
+  This message is {{
+    result
+  }}
+  at {{
+    prediction
+  }}
+  %
+  </h3>
+</div>
+
+<div>
+  <form>
+    <input type="button" value="Retour" onclick="history.go(-1)">
+  </form>
+</div>
+{% endblock %}

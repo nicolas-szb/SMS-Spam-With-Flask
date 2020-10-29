@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--Enter Name -->
+<h4>
+  Machine Learning App with Flask
+</h4>
+<h1>
+  Spam Detector For SMS Messages
+</h1>
+
+<div>
+  <div class="enter-message">
+    <form action="{{ url_for('result') }}" method="POST">
+      <label>Enter Your Message Here</label>
+      <input type="text" name="name">
+      <input type="submit" value="Predict">
+    </form>
+  </div>
+</div>
+{% endblock %}
